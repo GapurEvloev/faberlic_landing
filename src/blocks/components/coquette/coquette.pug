@@ -1,0 +1,46 @@
+section.section.section--coquette
+    .container
+        .coquette
+            svg.coquette__bg-svg(width='746' height='287' viewbox='0 0 746 287' fill='none' xmlns='http://www.w3.org/2000/svg')
+                 rect(y='0.0979004' width='745.042' height='286.902' fill='#F3EAEB')
+
+            //- svg(width='1180' height='317' viewbox='0 0 1180 317' fill='none' xmlns='http://www.w3.org/2000/svg')
+            //-     path(d='M0 0.466064H1180V259.076L590 316.69L0 259.076V0.466064Z' fill='#F3EAEB')
+            .coquette__flowers(data-relative-input="true")
+                img(src="./img/coquette/flower.png", alt="Flowers" data-depth="0.2").coquette__bg-img
+            +Slider([{
+                img: "./img/coquette/slide-img1.png",
+                title: "Платок женский «Флориссимо»",
+                oldprice: "650",
+                saleprice: "499"
+            }, {
+                img: "./img/coquette/slide-img2.png",
+                title: "Пончо «Конкур»",
+                oldprice: "2500",
+                saleprice: "1999"
+            }, {
+                img: "./img/coquette/slide-img3.png",
+                title: "Сумка «Конкур»",
+                oldprice: "2500",
+                saleprice: "1999"
+            }, {
+                img: "./img/coquette/slide-img4.png",
+                title: "Ремень «Маркиза»",
+                oldprice: "800",
+                saleprice: "399"
+            }, {
+                img: "./img/coquette/slide-img5.png",
+                title: "Колготки в горошек",
+                oldprice: "500",
+                saleprice: "399"
+            }, {
+                img: "./img/coquette/slide-img6.png",
+                title: "Колготки в горошек",
+                oldprice: "500",
+                saleprice: "399"
+            }]).coquette-slider#coquette
+        
+        .bnt-row
+            a(href="https://new.faberlic.com/ru/catalog/flash").bnt.btn--pink Ещё больше подарков в каталоге
+            
+        

@@ -1,0 +1,33 @@
+section.section.section--fashionista
+    .container
+        .fashionista
+            svg.fashionista__bg-svg(width='1180' height='317' viewbox='0 0 1180 317' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M0 0.466064H1180V259.076L590 316.69L0 259.076V0.466064Z' fill='#F3EAEB')
+            .fashionista__flowers(data-relative-input="true")
+                img(src="./img/fashionista/flower_2.png", alt="Flowers" data-depth="0.2").fashionista__bg-img
+            +Slider([{
+                img: "./img/fashionista/slide-img1.png",
+                title: "Платок женский «Флориссимо»",
+                oldprice: "650",
+                saleprice: "499"
+            }, {
+                img: "./img/fashionista/slide-img2.png",
+                title: "Пончо «Конкур»",
+                oldprice: "2500",
+                saleprice: "1999"
+            }, {
+                img: "./img/fashionista/slide-img3.png",
+                title: "Сумка «Конкур»",
+                oldprice: "2500",
+                saleprice: "1999"
+            }, {
+                img: "./img/fashionista/slide-img4.png",
+                title: "Ремень «Маркиза»",
+                oldprice: "800",
+                saleprice: "399"
+            }, {
+                img: "./img/fashionista/slide-img5.png",
+                title: "Колготки в горошек",
+                oldprice: "500",
+                saleprice: "399"
+            }]).fashionista-slider#fashionista

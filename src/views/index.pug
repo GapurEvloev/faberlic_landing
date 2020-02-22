@@ -1,0 +1,16 @@
+extends layouts/default
+
+block variables
+	- const title = "gulp-pug-starter"
+
+block content
+	include ../blocks/components/banner/banner.pug
+	include ../blocks/components/ideas/ideas.pug
+	include ../blocks/components/fashionista/fashionista.pug
+	include ../blocks/components/coquette/coquette.pug
+	include ../blocks/components/banner/banner-bottom.pug
+	
+
+block scripts
+	script(src="../js/vendor.js")
+	script(src="../js/main.js")
