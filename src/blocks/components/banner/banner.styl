@@ -1,0 +1,24 @@
+.banner
+    margin-bottom 30px
+
+    &__img
+        width 100%
+
+        &--desktop
+            display none
+
+    +md-block()
+        margin-bottom 80px
+
+        &__img
+            width 100%
+
+            &--desktop
+                display block
+            
+            &--mobile
+                display none
+
+.section--banner-bottom
+    .banner
+        margin-bottom 0

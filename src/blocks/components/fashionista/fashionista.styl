@@ -1,0 +1,121 @@
+.section--fashionista
+    background-color #F3EAEB
+
+    +md-block()
+        background none
+
+.fashionista
+    padding 20px 0
+    position relative
+    text-align center
+
+    .section-title
+        +lg-block()
+            margin-top 20px
+
+    &__bg
+        &-svg    
+            width 100%
+            position absolute
+            left 0
+            top 0
+            height  auto
+            z-index -2
+
+        &-img
+            position absolute!important
+            top 0
+            display none!important
+    
+    +lg-block()
+        &__flowers
+            position absolute!important
+            top -20px
+            width 100%
+
+        &__bg
+            &-img
+                left 20px!important
+                display block!important
+                width 300px 
+    +xl-block()
+        &__bg
+            &-img
+                width 400px 
+    +xl-block()
+        &__bg
+            &-img
+                width 445px 
+
+.slide
+    &__img
+        width 100%
+        height 0
+        padding-bottom 141%  
+        background-repeat no-repeat
+        background-size contain
+        background-position center 
+        margin-bottom 20px
+    
+    &__title
+        font-family $cormorant-font-family
+        font-size 20px
+        text-transform uppercase
+        font-weight 400
+        min-height 46px 
+
+    &__price
+        position relative
+        line-height 1.5
+        padding 25px 0 15px
+        margin-top 25px
+
+        &:before
+            content ''
+            position absolute
+            width 160px
+            height 0
+            border-top 1px solid #333
+            top 0
+            left 50%
+            transform translateX(-50%)
+
+        &-old
+            font-family "Open Sans"
+            font-style italic
+            font-weight normal
+            font-size 12px
+            text-decoration line-through
+            display inline-block
+            margin-right 5px
+
+        &-sale
+            font-family $minion-font-family
+            color #FF0000
+            font-style italic
+            font-weight 600
+            font-size 40px
+            line-height 48px
+    
+.swiper-container
+    margin 0 36px
+
+    +md-block()
+        margin 0 50px
+    +lg-block()
+        margin 0 70px
+    +xl-block()
+        margin 0 100px
+
+.nav-svg
+    circle,
+    path
+        transition all .2s linear
+        
+    circle 
+        display none
+
+        +xl-block()
+            display block
+    
+    

@@ -2,14 +2,37 @@
 .swiper-button-prev-custom 
     position absolute
     top 50%
-    transform translateY(-50%)
+    transform translateY(-100%)
     z-index 10
     cursor pointer
     display flex
     align-items center
     justify-content center
+    outline none
+    transition all .2s linear
+    
+    &:hover
+    &:focus
+        svg 
+            path
+                fill: #B31A5E
+      
+            +lg-block() 
+                path
+                    fill: #fff
+                
+                circle
+                    fill #FDDEE2
 
+    
 .swiper-button-next-custom
-    right -20px
+    right -40px
 .swiper-button-prev-custom
-    left -20px
+    left -40px
+
+
++lg-block()
+    .swiper-button-next-custom
+        right -20px
+    .swiper-button-prev-custom
+        left -20px

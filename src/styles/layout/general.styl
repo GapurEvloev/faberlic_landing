@@ -9,6 +9,7 @@ html
 body
     -moz-osx-font-smoothing grayscale
     -webkit-font-smoothing antialiased
+    color $text-color
 
 h1, h2, h3, h4, h5, h6, ul
     margin 0
@@ -20,6 +21,17 @@ ul
 a
     display inline-block
     text-decoration none
+    color $text-color
+
+button
+    appearance none
+    padding 0
+    margin 0
+    background none
+    border 0
+
+.wrapper
+    overflow hidden
 
 .container
     container()
@@ -28,3 +40,14 @@ a
     lg(max-width, rem(960))
     xl(max-width, rem(1140))
     xxl(max-width, rem(1210))
+
+.section-title
+    font-family $marianna-font-family
+    font-weight 400
+    font-size 50px
+    text-align center
+    margin-bottom 30px
+
+    +xl-block() 
+        font-size 70px
+        margin-bottom 50px

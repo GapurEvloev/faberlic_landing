@@ -1,0 +1,202 @@
+.header
+    border-bottom 1px solid #E5E5E5
+    margin-bottom 25px
+
+    +lg-block()
+        border 0
+        margin-bottom 38px
+
+    &__row
+        display flex
+        position relative
+        align-items flex-end
+
+        +lg-block()
+            justify-content space-between
+            align-items flex-start
+
+    &__top
+        padding 15px 0
+        font-size 12px
+        position relative
+
+        +lg-block()
+            padding-top 20px
+
+    &__bottom
+        display none
+
+        +lg-block()
+            display flex
+            align-items center
+    
+    &__col
+        &--right
+            display flex
+            flex-direction row-reverse
+            margin-left auto
+
+            +lg-block()
+                margin 0
+                flex-direction column
+                align-items flex-end
+                
+
+    &__list
+        display inline-flex
+        align-items center
+
+        &--langs 
+            margin-left 30px
+            margin-right 13px
+
+            +lg-block()
+                margin-left 0
+                margin-bottom 17px
+
+        &--actions
+            display none
+
+            +lg-block()
+                display flex
+            
+            .header
+                &__list
+                    &-item
+                        margin-right 12px
+
+                    &-icon
+                        margin-right 5px
+
+        &--sign
+            +lg-block()
+                margin-bottom 17px
+
+        &-icon
+            wh(16px)
+        
+        &-item
+            &--location
+            &--signup
+            &--catatlog
+                display none
+
+                +lg-block()
+                    display block
+            
+            &--signin
+            &--lang
+                span 
+                    display none
+    
+                    +lg-block()
+                        display block
+            
+            &--signin
+            &--basket
+            &--favorite
+            &--catatlog
+                padding 0 5px
+
+                +lg-block()
+                    padding 0 10px
+
+            &--basket
+                +lg-block()
+                    padding-right 0
+
+
+            &--lang
+                +lg-block()
+                    margin-right 10px
+                    span
+                        padding-left 5px
+                        padding-right 10px
+                        border-right 1px solid #BDBDBD
+            
+            &--signin
+                padding-right 0
+                +lg-block()
+                    span
+                        padding 0 10px
+                        border-right 1px solid #BDBDBD
+        
+        &-link
+            display flex
+            align-items center
+    
+    &__mobilenav-trigger
+        position absolute
+        cursor pointer
+
+        +lg-block()
+            display none
+    
+    &__logo
+        &-h1
+            position absolute
+            opacity 0
+            z-index -2
+            visibility hidden
+        
+        +lg-block()
+            position absolute
+            top 19px
+            left 50%
+            transform translateX(-50%)
+
+        &-svg
+            height 26px
+            width auto
+
+            +lg-block()
+                height 42px
+            
+.nav
+    &__list
+        display flex
+        font-size 12px
+
+    &__item
+        &:not(:last-child)
+            margin-right 15px
+        
+    &__link
+        &--new
+            color #3BB712
+        
+        &--stocks
+            color #CC0000
+    
+    +lg-block()
+        &__list
+            font-size 12px
+        
+        &__item
+            &:not(:last-child)
+                margin-right 15px
+    
+    +xl-block()
+        &__list
+            font-size 13px
+        
+        &__item
+            &:not(:last-child)
+                margin-right 25px
+    
+    +xxl-block()
+        &__item
+            &:not(:last-child)
+                margin-right 35px
+    
+.search
+    &__field
+        display none
+    
+    &__button
+        wh(40px)
+        display inline-flex
+        justify-content center
+    
+    &__icon
+        wh(16px)

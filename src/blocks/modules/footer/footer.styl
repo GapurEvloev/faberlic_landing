@@ -1,0 +1,110 @@
+.footer
+    background-color #F7F7F7
+    &__wrap
+        padding 40px 0
+
+        +lg-block()
+            display flex
+            padding 50px 0
+    
+    &__col
+        +lg-block()
+            flex 0 0 (100%/4)
+
+            &--socials
+                display flex
+                flex-direction column
+                justify-content flex-end
+                margin-bottom 20px
+        
+    &__nav
+        margin-bottom 20px
+
+        &-list
+            display none
+
+            +lg-block()
+                display block
+        
+        &-item
+            text-align center
+            margin-bottom 10px
+
+            +lg-block()
+                text-align left
+
+        &-link
+            font-size 12px
+            font-weight 400
+            // display none
+
+        &-title
+            font-weight 900
+            font-size 14px
+            display block
+            text-align center
+            margin-bottom 10px
+            +lg-block()
+                text-align left
+
+    &__servises
+        margin-bottom 40px
+    
+    &__additionally
+        width 205px
+        margin 0 auto 70px
+
+        +lg-block()
+            margin-left 0
+            margin-bottom 0
+            margin-top 28px 
+
+        &-link
+            text-align center
+            display block
+            text-transform uppercase
+            font-size 11px
+            line-height 1
+            padding 18px 0
+            svg 
+                display none
+                height 20px
+                width 24px
+            
+            +lg-block()
+                display flex
+                align-items left
+                svg 
+                    display inline-block
+                    margin-right 10px
+
+        &-item
+            border-bottom 1px solid #E0E0E0
+
+            &:first-child
+                border-top 1px solid #E0E0E0
+        
+    &__apps
+        text-align center
+        margin-bottom 30px
+
+        &-link
+            margin 0 5px
+
+        &-icon
+            width 80px
+        
+    &__socials
+        display flex
+        justify-content center
+        margin-bottom 20px
+
+        &-item
+            padding 0 4px
+        &-icon
+            wh(23px)
+        
+    &__copyright
+        font-size 12px
+        text-align center
+        font-family $marianna-font-family

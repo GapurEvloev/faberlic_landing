@@ -80,6 +80,7 @@
     },
     "dependencies": {
         "animate.css": "^3.7.2",
+        "animejs": "^3.1.0",
         "bootstrap": "^4.4.1",
         "bootstrap-4-stylus": "^1.0.7",
         "jquery": "^3.4.1",
@@ -88,6 +89,7 @@
         "parallax-js": "^3.1.0",
         "popper.js": "^1.16.1",
         "smart-grid": "^2.1.2",
+        "svg4everybody": "^2.1.9",
         "swiper": "^5.3.1"
     }
 }
